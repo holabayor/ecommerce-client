@@ -245,9 +245,13 @@ const Home = () => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-3">
-              <div className="famous-card bg-dark">
-                <h5>Big Scrren</h5>
-                <h6>SMart Watch Series</h6>
+              <div className="famous-card posiition-relative">
+                <img src="images/famous-01.jpg" alt="famous" />
+                <div className="famous-content position-absolute">
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series</h6>
+                  <p>From $199.00</p>
+                </div>
               </div>
             </div>
           </div>
