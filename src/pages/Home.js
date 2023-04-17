@@ -246,7 +246,11 @@ const Home = () => {
           <div className="row">
             <div className="col-3">
               <div className="famous-card posiition-relative">
-                <img src="images/famous-01.jpg" alt="famous" />
+                <img
+                  src="images/famous-01.jpg"
+                  className="img-fluid"
+                  alt="famous"
+                />
                 <div className="famous-content position-absolute">
                   <h5>Big Screen</h5>
                   <h6>Smart Watch Series</h6>
