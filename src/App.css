@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: o;
-  box-sixing: border-box;
+  box-sizing: border-box;
 }
 :root {
   --color-131921: #131921;
@@ -337,3 +337,39 @@ footer .input-group-text {
 }
 
 /* Special Card ends here */
+
+/* Famous Card */
+.famous-card .famous-content {
+  top: 4%;
+  left: 5%;
+}
+.famous-card img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.famous-content h5 {
+  font-size: 13px;
+  line-height: 10px;
+  font-weight: 400px;
+  color: white;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+.famous-content h6 {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 500px;
+  color: white;
+}
+
+.famous-card .other-info {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 100px;
+  color: white;
+  left: 4%;
+  top: 92%;
+}
+
+/* Famous Card ends here */

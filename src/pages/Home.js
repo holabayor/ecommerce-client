@@ -4,6 +4,7 @@ import Marquee from 'react-fast-marquee';
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
 import SpecialProduct from '../components/SpecialProduct';
+import FamousCard from '../components/FamousCard';
 const Home = () => {
   return (
     <>
@@ -244,20 +245,7 @@ const Home = () => {
       <section className="famous-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-3">
-              <div className="famous-card posiition-relative">
-                <img
-                  src="images/famous-01.jpg"
-                  className="img-fluid"
-                  alt="famous"
-                />
-                <div className="famous-content position-absolute">
-                  <h5>Big Screen</h5>
-                  <h6>Smart Watch Series</h6>
-                  <p>From $199.00</p>
-                </div>
-              </div>
-            </div>
+            <FamousCard />
           </div>
         </div>
       </section>
