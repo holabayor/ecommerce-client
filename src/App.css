@@ -639,3 +639,11 @@ footer .input-group-text {
   color: white;
 }
 /* Auth Card ends here */
+
+/* Policy starts here */
+.policy {
+  background-color: white;
+  padding: 30px;
+}
+
+/* Policy ends here */

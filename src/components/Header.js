@@ -29,7 +29,9 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h1>
-                <Link className="text-white">Developers</Link>
+                <Link className="text-white">
+                  ibùs<strong>ọ̀</strong>
+                </Link>
               </h1>
             </div>
             <div className="col-5">
