@@ -77,19 +77,19 @@ const Footer = () => {
             <div className="col-3">
               <h4 className="text-white mb-4">Information</h4>
               <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/privacy-policy">
                   Privacy Policy
                 </Link>
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/refund-policy">
                   Refund Policy
                 </Link>
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/shopping-policy">
                   Shopping Policy
                 </Link>
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/termsandcondition">
                   Terms of Service
                 </Link>
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/blogs">
                   Blogs
                 </Link>
               </div>
@@ -97,19 +97,19 @@ const Footer = () => {
             <div className="col-3">
               <h4 className="text-white mb-4">Account</h4>
               <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/">
                   Search
                 </Link>
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/about">
                   About Us
                 </Link>
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/">
                   Faq
                 </Link>
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/contact">
                   Contact
                 </Link>
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/">
                   Size Chart
                 </Link>
               </div>
@@ -117,19 +117,19 @@ const Footer = () => {
             <div className="col-2">
               <h4 className="text-white mb-4">Quick Links</h4>
               <div className="footer-links d-flex flex-column">
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/">
                   Accessories
                 </Link>
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/">
                   Laptops
                 </Link>
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/">
                   Headphones
                 </Link>
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/">
                   Smart Watches
                 </Link>
-                <Link className="text-white py-2 mb-1" to="">
+                <Link className="text-white py-2 mb-1" to="/">
                   Tablets
                 </Link>
               </div>
