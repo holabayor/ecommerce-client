@@ -16,7 +16,7 @@ const OurStore = () => {
           <div className="row">
             <div className="col-3">
               <div className="filter-card mb-3">
-                <h3 className="filter-title">Shop by Categories </h3>
+                <h3 className="filter-title">Shop By Categories </h3>
                 <div>
                   <ul>
                     <li>Watch</li>
