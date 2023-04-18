@@ -20,12 +20,12 @@ const ProductCard = (props) => {
           </div>
 
           <div className="product-image">
-            <img src="images/watch.jpg" className="img-fluid" alt="watch" />
-            <img src="images/watch.jpg" className="img-fluid" alt="watch" />
+            <img src="images/samsung.jpg" className="img-fluid" alt="watch" />
+            <img src="images/samsung-2.jpg" className="img-fluid" alt="watch" />
           </div>
           <div className="product-details">
-            <h6 className="brand">Havels</h6>
-            <h5 className="product-title">Kids Headphones bulk pack 10</h5>
+            <h6 className="brand">Samsung</h6>
+            <h5 className="product-title">6.8-inch QHD+ display</h5>
             <ReactStars
               count={5}
               value={4}

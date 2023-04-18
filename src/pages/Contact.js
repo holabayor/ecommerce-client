@@ -1,6 +1,12 @@
 import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
 import Meta from '../components/Meta';
+import {
+  AiFillHome,
+  AiFillMail,
+  AiFillPhone,
+  AiFillInfoCircle,
+} from 'react-icons/ai';
 
 const Contact = () => {
   return (
@@ -19,6 +25,7 @@ const Contact = () => {
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                title="map"
               />
             </div>
             <div className="col-12 mt-5">
@@ -64,6 +71,32 @@ const Contact = () => {
                 </div>
                 <div className="">
                   <h3 className="contact-title mb-4">Get in touch with us</h3>
+                  <div>
+                    <ul className="ps-0">
+                      <li className="mb-3 d-flex gap-15 align-items-center">
+                        <AiFillHome className="fs-5 contact-icon" />
+                        <address className="mb-0">
+                          Somewhere, Everywhere, Worldwide
+                        </address>
+                      </li>
+                      <li className="mb-3 d-flex gap-15 align-items-center">
+                        <AiFillPhone className="fs-5 contact-icon" />
+                        <a className="" href="tel:2348140555831">
+                          +234 814 055 5831
+                        </a>
+                      </li>
+                      <li className="mb-3 d-flex gap-15 align-items-center">
+                        <AiFillMail className="fs-5 contact-icon" />
+                        <a className="" href="mailto:liasu.olabayo@gmail.com">
+                          liasu.olabayo@gmail.com
+                        </a>
+                      </li>
+                      <li className="mb-3 d-flex gap-15 align-items-center">
+                        <AiFillInfoCircle className="fs-5 contact-icon" />
+                        <p>Monday - Friday 10AM - 8 PM</p>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
