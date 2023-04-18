@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactStars from 'react-rating-stars-component';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const ProductCard = () => {
+const ProductCard = (props) => {
+  const { grid } = props;
+  let location = useLocation();
   return (
     <>
-      <Link className="col-2">
-        <div className="product-card position-relative">
+      <div
+        className={` ${
+          location.pathname === '/store' ? `gr-${grid}` : 'col-3'
+        }`}
+      >
+        <Link className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="images/wish.svg" alt="add to wishlist" />
@@ -27,6 +33,12 @@ const ProductCard = () => {
               size={24}
               activeColor="#ffd700"
             />
+            <p className={`description ${grid === 12 ? 'd-block' : 'd-none'}`}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea
+            </p>
             <p className="price">$120.00</p>
           </div>
           <div className="action-bar position-absolute">
@@ -43,8 +55,8 @@ const ProductCard = () => {
               </Link>
             </div>
           </div>
-        </div>
-      </Link>
+        </Link>
+      </div>
     </>
   );
 };
