@@ -583,7 +583,7 @@ footer .input-group-text {
 /* Auth Card starts here */
 
 .auth-card {
-  margin: 20px auto 50px;
+  margin: 20px auto 150px;
   width: 500px;
   padding: 20px;
   background-color: white;
@@ -598,7 +598,7 @@ footer .input-group-text {
 }
 
 .auth-card p {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--color-777777);
 }
 
@@ -612,9 +612,13 @@ footer .input-group-text {
   border-color: transparent;
 }
 
-.auth-card a:first-child {
+.auth-card a {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--color-132921);
+}
+
+.auth-card .signup {
+  color: white;
 }
 /* Auth Card ends here */
