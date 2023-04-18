@@ -22,7 +22,7 @@ const SpecialProduct = () => {
             />
             <p className="price">
               <span className="red-p">$65.00</span>&nbsp;
-              <strike>$75.00</strike>
+              <strike className="text-danger">$75.00</strike>
             </p>
             <div className="discount-till d-flex align-items-center gap-10">
               <p className="mb-0">
@@ -38,13 +38,14 @@ const SpecialProduct = () => {
               <p>Products: 5</p>
               <div
                 className="progress"
+                style={{ height: '5px' }}
                 role="progressbar"
                 aria-label="Basic example"
                 aria-valuenow="25"
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                <div class="progress-bar" style={{ width: '25%' }}></div>
+                <div class="progress-bar" style={{ width: '45%' }}></div>
               </div>
             </div>
             <Link>Add to Cart</Link>

@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import BreadCrumb from '../components/BreadCrumb';
 import Meta from '../components/Meta';
 
-const ForgotPassword = () => {
+const ResetPassword = () => {
   return (
     <>
       <Meta title={'Forgot Password'} />
@@ -15,15 +14,21 @@ const ForgotPassword = () => {
               <div className="auth-card">
                 <h3 className="text-center mb-3">Reset Your Password</h3>
                 <form action="" className="d-flex flex-column gap-20">
-                  <p className="text-center">
-                    We will send you an email to reset your password
-                  </p>
+                  <p className="text-center">Enter your new password</p>
                   <div>
                     <input
-                      name="email"
-                      type="email"
+                      name="password"
+                      type="password"
                       className="form-control"
-                      placeholder="Email"
+                      placeholder="New password"
+                    />
+                  </div>
+                  <div>
+                    <input
+                      name="password-again"
+                      type="password"
+                      className="form-control"
+                      placeholder="New password again"
                     />
                   </div>
                   <div>
@@ -31,7 +36,6 @@ const ForgotPassword = () => {
                       <button className="button border-0 mb-1" type="submit">
                         Submit
                       </button>
-                      <Link to={'/login'}>Cancel</Link>
                     </div>
                   </div>
                 </form>
@@ -44,4 +48,4 @@ const ForgotPassword = () => {
   );
 };
 
-export default ForgotPassword;
+export default ResetPassword;
