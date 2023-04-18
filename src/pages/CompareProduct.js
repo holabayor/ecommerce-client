@@ -1,7 +1,7 @@
 import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
-import Meta from '../components/Meta';
 import CompareProductCard from '../components/CompareProductCard';
+import Meta from '../components/Meta';
 
 const CompareProduct = () => {
   return (

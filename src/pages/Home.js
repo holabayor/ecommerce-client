@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Marquee from 'react-fast-marquee';
+import { Link } from 'react-router-dom';
 import BlogCard from '../components/BlogCard';
+import FamousCard from '../components/FamousCard';
 import ProductCard from '../components/ProductCard';
 import SpecialProduct from '../components/SpecialProduct';
-import FamousCard from '../components/FamousCard';
 const Home = () => {
   return (
     <>
