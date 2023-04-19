@@ -54,17 +54,20 @@ a {
 .gap-30 {
   gap: 30px;
 }
-.button {
+
+.button:hover {
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+}
+
+.button,
+.auth-card .signup:hover,
+.buy-now:hover {
   background-color: var(--color-232f3e);
   color: white;
   font-size: 14px;
   padding: 13px 33px;
   border-radius: 25px;
-}
-
-.button:hover {
-  background-color: var(--color-febd69);
-  color: var(--color-131921);
 }
 
 /* Header starts here */
@@ -629,14 +632,17 @@ footer .input-group-text {
   border-color: transparent;
 }
 
+.product-links > a,
 .auth-card a {
   font-size: 14px;
   font-weight: 400;
   color: var(--color-132921);
 }
 
-.auth-card .signup {
-  color: white;
+.auth-card .signup,
+.buy-now {
+  background-color: var(--color-febd69);
+  color: var(--color-132921);
 }
 /* Auth Card ends here */
 
@@ -647,3 +653,110 @@ footer .input-group-text {
 }
 
 /* Policy ends here */
+
+/* Main Product Page starts here */
+.review-inner-wrapper {
+  background-color: white;
+  padding: 30px;
+}
+
+.review-head {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
+.review-head a,
+.review-head p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-777777);
+}
+
+.review-form h4 {
+  font-size: 16px;
+  color: var(--color-777777);
+}
+.review-form {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.review:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+  font-size: 14px;
+  color: var(--color-777777);
+}
+
+.main-product-image,
+.main-product-details {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.main-product-image > div {
+  padding: 20px;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.other-product-image > div:first-child {
+  width: 100% !important;
+  object-fit: cover;
+}
+
+.other-product-images > div {
+  width: 45%;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.main-product-details h3.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 10px;
+}
+
+.main-product-details p.price {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.main-product-details a.review-btn,
+.t-review {
+  font-size: 13px;
+  color: var(--color-777777);
+}
+.product-heading {
+  font-size: 14px;
+  color: var(--color-1c1c1b);
+  margin-bottom: 0px;
+}
+
+.product-data {
+  font-size: 13px;
+  color: var(--color-777777);
+  margin-bottom: 0px;
+}
+
+/* Main Product Page endsa:hover here */
+
+/* Image Hover Zoom Effect Starts Here */
+.img-wrapper {
+  overflow: hidden;
+}
+
+img.hover-zoom {
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+img.hover-zoom:hover {
+  transform: scale(1.25);
+}
+/* Image Hover Zoom Effect Ends Here */
