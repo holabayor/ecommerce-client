@@ -29,12 +29,12 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h1>
-                <Link className="text-white">
+                <Link to={'/'} className="text-white">
                   ibùs<strong>ọ̀</strong>
                 </Link>
               </h1>
             </div>
-            <div className="col-5">
+            <div className="col-5" id="search">
               <div className="input-group">
                 <input
                   type="text"

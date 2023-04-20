@@ -26,9 +26,9 @@ const SingleProduct = () => {
       <Meta title={'Product'} />
       <BreadCrumb title="Product" />
       <div className="main-product-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl p-3 bg-white">
+        <div className="container-xxl p-3">
           <div className="row">
-            <div className="col-6">
+            <div className="col-6 bg-white">
               <div className="main-product-image">
                 <div>
                   <ImageHoverZoom
@@ -39,7 +39,7 @@ const SingleProduct = () => {
                   {/* <ReactImageZoom {...mainprops} /> */}
                 </div>
               </div>
-              <div className="other-product-images d-flex flex-wrap gap-15">
+              <div className="other-product-images d-flex flex-wrap justify-content-around gap-10">
                 <div>
                   <ReactImageZoom {...miniprops} />
                 </div>
@@ -74,7 +74,11 @@ const SingleProduct = () => {
                     />
                     <p className="mb-0">( 2 Reviews )</p>
                   </div>
-                  <p className="t-review border-bottom py-3">Write a Review</p>
+                  <div className="border-bottom py-3">
+                    <a href="#review" className="t-review">
+                      Write a Review
+                    </a>
+                  </div>
                   <div>
                     <div className="d-flex align-items-center gap-10 py-2">
                       <h4 className="product-heading">Type:</h4>
