@@ -8,7 +8,7 @@ import ImageHoverZoom from '../components/ImageHoverZoom';
 import Colours from '../components/Colours';
 import { Link } from 'react-router-dom';
 import { AiOutlineHeart } from 'react-icons/ai';
-import { BiShuffle } from 'react-icons/bi';
+import { BiExtension, BiRuler, BiShareAlt, BiShuffle } from 'react-icons/bi';
 import { BsTruck } from 'react-icons/bs';
 
 const SingleProduct = () => {
@@ -54,7 +54,7 @@ const SingleProduct = () => {
                 </div>
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-6 bg-white">
               <div className="main-product-details">
                 <div className="border-bottom">
                   <h3 className="title">
@@ -159,10 +159,123 @@ const SingleProduct = () => {
                           Add to Compare
                         </a>
                       </div>
-                      <div>
-                        <BsTruck /> Shipping & Returns
+                    </div>
+                    <div className="accordion-wrapper py-5">
+                      <div class="accordion" id="accordion">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button
+                              class="accordion-button collapsed bg-white"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="false"
+                              aria-controls="collapseOne"
+                            >
+                              <BsTruck className="fs-5 me-2" />
+                              Shipping & Returns
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse"
+                          >
+                            <div class="accordion-body">
+                              <p data-bs-parent="#accordion" className="mb-0">
+                                Free shipping and returns available on all
+                                orders! <br />
+                                We ship all domestic orders within
+                                <strong>&nbsp;5-10 business days.</strong>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button
+                              class="accordion-button collapsed bg-white"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                            >
+                              <BiExtension className="fs-5 me-2" />
+                              Materials
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                          >
+                            <div class="accordion-body">
+                              <p data-bs-parent="#accordion" className="mb-0">
+                                Running Shoes cushions your stride with soft
+                                foam to keep you running in comfort. Lightweight
+                                knit material wraps your foot in breathable
+                                support, while a minimalist design fits in just
+                                about anythere your day takes you.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button
+                              class="accordion-button collapsed bg-white"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree"
+                              aria-expanded="false"
+                              aria-controls="collapseThree"
+                            >
+                              <BiRuler className="fs-5 me-2" />
+                              Dimensions
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                          >
+                            <div class="accordion-body">
+                              <p data-bs-parent="#accordion" className="mb-0">
+                                Dimension body goes here
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button
+                              class="accordion-button collapsed bg-white"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour"
+                              aria-expanded="false"
+                              aria-controls="collapseFour"
+                            >
+                              <AiOutlineHeart className="fs-5 me-2" />
+                              Care Instructions
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseFour"
+                            class="accordion-collapse collapse"
+                          >
+                            <div class="accordion-body">
+                              <p data-bs-parent="#accordion" className="mb-0">
+                                Use a soft damp cloth and a drop of mild soap to
+                                remove any haze. Air dry.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div></div>
+                    </div>
+                    <BiShareAlt className="fs-5 me-2" />
+                    Share
+                    <div className="payment-methods p-5">
+                      <h3>Payment methods</h3>
                     </div>
                   </div>
                 </div>
@@ -171,7 +284,7 @@ const SingleProduct = () => {
           </div>
         </div>
       </div>
-      <section className="description-wrapper py-5 home-wrapper-2">
+      <section className="description-wrapper py-3 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -220,6 +333,13 @@ const SingleProduct = () => {
                 <div className="review-form py-4">
                   <h4>Write a Review</h4>
                   <form action="" className="d-flex flex-column gap-15">
+                    <ReactStars
+                      count={5}
+                      value={4}
+                      edit={true}
+                      size={24}
+                      activeColor="#ffd700"
+                    />
                     <div>
                       <input
                         type="text"
@@ -262,8 +382,8 @@ const SingleProduct = () => {
                       <h6 className="mb-0">Josh</h6>
                       <ReactStars
                         count={5}
-                        value={4}
-                        edit={true}
+                        value={5}
+                        edit={false}
                         size={24}
                         activeColor="#ffd700"
                       />

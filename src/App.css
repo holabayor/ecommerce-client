@@ -116,7 +116,7 @@ a {
 .header-bottom .dropdown-menu {
   background-color: var(--color-131921);
   width: 100%;
-  transform: translate3d(0px, 57px, 0px) !important;
+  transform: translate3d(0px, 45px, 0px) !important;
 }
 .header-bottom .dropdown-item {
   padding: 20px;
@@ -520,6 +520,11 @@ footer .input-group-text {
 .gr-12 .action-bar {
   top: 18%;
 }
+
+.w-35 {
+  width: 35%;
+}
+
 /* Our Store ends here */
 
 /* Contact Us starts here */
@@ -760,3 +765,68 @@ img.hover-zoom:hover {
   transform: scale(1.25);
 }
 /* Image Hover Zoom Effect Ends Here */
+
+.accordion-body > p {
+  font-size: 13px;
+  color: var(--color-1c1c1b);
+  padding: 0;
+}
+
+.accordion-header {
+  border: none;
+}
+
+.payment-method {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+/* Cart starts here */
+
+.cart-header,
+.cart-data {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.cart-data img {
+  border-radius: 10px;
+}
+
+.cart-header h4 {
+  font-size: 14px;
+  color: var(--color-777777);
+  text-transform: uppercase;
+}
+.cart-col-1 {
+  width: 40%;
+}
+.cart-wrapper p {
+  font-size: 13px;
+  color: var(--color-777777);
+}
+
+.delete {
+  color: black;
+}
+.delete:hover,
+.delete:focus {
+  color: red;
+}
+
+.cart-col-2 {
+  width: 10%;
+}
+.cart-col-3 {
+  width: 15%;
+}
+.cart-col-4 {
+  width: 15%;
+}
+
+.mt-auto {
+  font-size: 13px;
+  color: var(--color-777777);
+}
+/* Cart ends here */

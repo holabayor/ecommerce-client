@@ -45,7 +45,7 @@ const SpecialProduct = () => {
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                <div class="progress-bar" style={{ width: '45%' }}></div>
+                <div className="progress-bar" style={{ width: '45%' }}></div>
               </div>
             </div>
             <Link>Add to Cart</Link>

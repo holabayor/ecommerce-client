@@ -6,7 +6,7 @@ import Meta from '../components/Meta';
 import ProductCard from '../components/ProductCard';
 
 const OurStore = () => {
-  const [grid, setGrid] = useState(4);
+  const [grid, setGrid] = useState(3);
   return (
     <>
       <Meta title="Our Store" />
@@ -62,25 +62,28 @@ const OurStore = () => {
                 <div className="d-flex align-items-center gap-10">
                   <div class="form-floating mb-3">
                     <input
-                      type="email"
+                      type="number"
                       className="form-control"
                       id="floatingInput"
-                      placeholder="name@example.com"
+                      placeholder="From"
                     />
                     <label htmlFor="floatingInput">From</label>
                   </div>
                   <div class="form-floating mb-3">
                     <input
-                      type="email"
+                      type="number"
                       className="form-control"
                       id="floatingInput"
-                      placeholder="name@example.com"
+                      placeholder="To"
                     />
                     <label htmlFor="floatingInput">To</label>
                   </div>
                 </div>
                 <h5 className="sub-title">Colors</h5>
                 <div className="d-flex flex-wrap">
+                  <Colours />
+                  <Colours />
+                  <Colours />
                   <Colours />
                   <Colours />
                   <Colours />

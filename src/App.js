@@ -20,6 +20,7 @@ import ShoppingPolicy from './pages/ShoppingPolicy';
 import RefundPolicy from './pages/RefundPolicy';
 import Cart from './pages/Cart';
 import SingleProduct from './pages/SingleProduct';
+import Checkout from './pages/Checkout';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path="refund-policy" element={<RefundPolicy />} />
           <Route path="shopping-policy" element={<ShoppingPolicy />} />
         </Route>
+        <Route path="checkout" element={<Checkout />} />
       </Routes>
     </BrowserRouter>
   );

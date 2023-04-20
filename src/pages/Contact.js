@@ -93,7 +93,7 @@ const Contact = () => {
                       </li>
                       <li className="mb-3 d-flex gap-15 align-items-center">
                         <AiFillInfoCircle className="fs-5 contact-icon" />
-                        <p>Monday - Friday 10AM - 8 PM</p>
+                        <p className="mb-0">Monday - Friday 10AM - 8 PM</p>
                       </li>
                     </ul>
                   </div>
